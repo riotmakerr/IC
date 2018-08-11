@@ -10,16 +10,16 @@ DEPLOY_DIR=/var/www/rocket.chat
 
 ### BUILD
 cd /ic
-sudo meteor npm install
-sudo meteor npm run postinstall
+sudo meteor npm install --allow-superuser
+sudo meteor npm run postinstall --allow-superuser
 
 # on the very first build, meteor build command should fail due to a bug on emojione package (related to phantomjs installation)
 # the command below forces the error to happen before build command (not needed on subsequent builds)
 set +e
-sudo meteor add rocketchat:lib
+sudo meteor add rocketchat:lib --allow-superuser
 set -e
 
-sudo meteor build --server-only --directory $DEPLOY_DIR
+sudo meteor build --server-only --directory $DEPLOY_DIR --allow-superuser
 
 ### RUN
 # cd $DEPLOY_DIR/bundle/programs/server
