@@ -3,7 +3,3 @@ os: linux
 files:
   - source: /
     destination: /ic
-hooks:
-  AfterInstall:
-    - location: /example-build-run.sh
-      timeout: 180
