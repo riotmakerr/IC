@@ -1,6 +1,4 @@
 #!/bin/bash
-set -x
-set -euvo pipefail
-IFS=$'\n\t'
+env HOME = /home/ubuntu
 cd /ic
 meteor npm start
