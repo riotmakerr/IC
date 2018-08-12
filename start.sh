@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /ic
-sudo meteor npm start --allow-superuser
+$ sudo killall -9 node
+meteor npm start
