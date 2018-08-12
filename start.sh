@@ -1,3 +1,3 @@
 #!/bin/bash
 cd /ic
-sudo meteor npm start
+sudo meteor npm start --allow-superuser
