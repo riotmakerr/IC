@@ -1,4 +1,4 @@
 #!/bin/bash
-env HOME = /home/ubuntu
-cd /ic
-meteor npm start
+#env HOME = /home/ubuntu
+#cd /ic
+#meteor npm start
